@@ -1,24 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Shree Devanagari 714.otf">
+            <string>ShreeDev0714</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="Toast" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="SignInColors" translatesAutoresizingMaskIntoConstraints="NO" id="4Zw-Jp-DUP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="459"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ErS-YU-aty">
+                                <rect key="frame" x="20" y="488.99999999999994" width="374" height="222.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsU-s7-ceC">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="43.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="GNN-jV-euO">
+                                        <rect key="frame" x="0.0" y="48.333333333333371" width="374" height="71"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W0B-bv-tny" customClass="MDCTextField">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ud2-cj-ZTo" customClass="MDCTextField">
+                                                <rect key="frame" x="0.0" y="37" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="czr-gY-7X5">
+                                        <rect key="frame" x="0.0" y="124.33333333333337" width="374" height="98"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdI-9s-2hU" customClass="CustomButton" customModule="Toast" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                                <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="z0C-VQ-qgB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="17"/>
+                                                <state key="normal" title="Sign In">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="signInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wqz-fP-dZZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceB-uk-a3T">
+                                                <rect key="frame" x="0.0" y="63" width="374" height="35"/>
+                                                <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="17"/>
+                                                <state key="normal" title="Sign Up"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ErS-YU-aty" secondAttribute="trailing" constant="20" id="Chc-6R-zFb"/>
+                            <constraint firstItem="ErS-YU-aty" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DTw-M8-Tzs"/>
+                            <constraint firstItem="4Zw-Jp-DUP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Jd6-Nt-nXh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Zw-Jp-DUP" secondAttribute="bottom" constant="403" id="LYZ-1Z-Uck"/>
+                            <constraint firstItem="4Zw-Jp-DUP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eqa-Se-IcL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ErS-YU-aty" secondAttribute="trailing" constant="20" id="fZ2-b1-Jie"/>
+                            <constraint firstItem="ErS-YU-aty" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nMf-08-28m"/>
+                            <constraint firstItem="4Zw-Jp-DUP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oeL-b2-mbN"/>
+                            <constraint firstItem="4Zw-Jp-DUP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ppl-rh-9Ss"/>
+                            <constraint firstItem="4Zw-Jp-DUP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wJO-Vh-Y2c"/>
+                            <constraint firstItem="ErS-YU-aty" firstAttribute="top" secondItem="4Zw-Jp-DUP" secondAttribute="bottom" constant="30" id="zme-cc-I63"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="70U-rh-9Ae"/>
+                    <connections>
+                        <outlet property="emailAddressField" destination="W0B-bv-tny" id="DVB-Vm-sbe"/>
+                        <outlet property="passwordField" destination="Ud2-cj-ZTo" id="Hk7-Cm-Nnx"/>
+                        <outlet property="signUpButton" destination="ceB-uk-a3T" id="0vh-7X-oNj"/>
+                        <segue destination="5df-94-xja" kind="show" identifier="goToFeed" id="aXf-fS-qpI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="695.6521739130435" y="109.82142857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LVB-bJ-Kpy">
+            <objects>
+                <viewController id="qzZ-Nm-xQC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ng-Ju-aWK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="PmT-ve-vFn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0N8-Ha-kiW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lBg-8x-vGS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2675.36231884058" y="109.82142857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GVk-dJ-7Bo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5df-94-xja" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ZVT-Mo-YML"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5o4-TH-BXM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qzZ-Nm-xQC" kind="relationship" relationship="rootViewController" id="EOB-2u-OyX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEZ-dA-r9G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763.7681159420292" y="109.82142857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SignInColors" width="500" height="459"/>
+    </resources>
 </document>

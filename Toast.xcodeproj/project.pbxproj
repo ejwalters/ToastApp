@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45D011B4F2EFC94387C9001C /* Pods_Toast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D4BB8206296815FA4F7EDAD /* Pods_Toast.framework */; };
 		5175151123F36485005E8385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175151023F36485005E8385 /* AppDelegate.swift */; };
 		5175151323F36485005E8385 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175151223F36485005E8385 /* SceneDelegate.swift */; };
 		5175151523F36485005E8385 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175151423F36485005E8385 /* ViewController.swift */; };
 		5175151823F36485005E8385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5175151623F36485005E8385 /* Main.storyboard */; };
 		5175151A23F36486005E8385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5175151923F36486005E8385 /* Assets.xcassets */; };
 		5175151D23F36486005E8385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5175151B23F36486005E8385 /* LaunchScreen.storyboard */; };
+		5175152523F36531005E8385 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5175152423F36531005E8385 /* GoogleService-Info.plist */; };
+		5175152A23F36BB0005E8385 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175152923F36BB0005E8385 /* SignInViewController.swift */; };
+		5175152D23F36ED5005E8385 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175152C23F36ED5005E8385 /* DataService.swift */; };
+		5175153023F36F7A005E8385 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175152F23F36F7A005E8385 /* Constants.swift */; };
+		5175153223F378D4005E8385 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175153123F378D4005E8385 /* RegisterViewController.swift */; };
+		5175153423F37B18005E8385 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175153323F37B18005E8385 /* CardView.swift */; };
+		5175153923F38914005E8385 /* Shree Devanagari 714.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5175153823F38914005E8385 /* Shree Devanagari 714.otf */; };
+		5175153B23F392C8005E8385 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175153A23F392C8005E8385 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,17 @@
 		5175151923F36486005E8385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5175151C23F36486005E8385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5175151E23F36486005E8385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5175152423F36531005E8385 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5175152923F36BB0005E8385 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5175152C23F36ED5005E8385 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		5175152F23F36F7A005E8385 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5175153123F378D4005E8385 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5175153323F37B18005E8385 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5175153823F38914005E8385 /* Shree Devanagari 714.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shree Devanagari 714.otf"; sourceTree = "<group>"; };
+		5175153A23F392C8005E8385 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		60777919E55D7944C1DEED0A /* Pods-Toast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Toast/Pods-Toast.debug.xcconfig"; sourceTree = "<group>"; };
+		6D4BB8206296815FA4F7EDAD /* Pods_Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8690AC124E1A82FEC42845E4 /* Pods-Toast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast.release.xcconfig"; path = "Pods/Target Support Files/Pods-Toast/Pods-Toast.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D011B4F2EFC94387C9001C /* Pods_Toast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D454EBFA282103D8CFAA357 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60777919E55D7944C1DEED0A /* Pods-Toast.debug.xcconfig */,
+				8690AC124E1A82FEC42845E4 /* Pods-Toast.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5175150423F36485005E8385 = {
 			isa = PBXGroup;
 			children = (
 				5175150F23F36485005E8385 /* Toast */,
 				5175150E23F36485005E8385 /* Products */,
+				1D454EBFA282103D8CFAA357 /* Pods */,
+				93F855307A63C21D71BE2320 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +88,79 @@
 		5175150F23F36485005E8385 /* Toast */ = {
 			isa = PBXGroup;
 			children = (
+				5175153723F38900005E8385 /* Fonts */,
+				5175152E23F36F6E005E8385 /* Utilities */,
+				5175152B23F36EC0005E8385 /* Services */,
+				5175152823F36B98005E8385 /* Controller */,
+				5175152723F36B93005E8385 /* View */,
+				5175152623F36B8B005E8385 /* Model */,
 				5175151023F36485005E8385 /* AppDelegate.swift */,
 				5175151223F36485005E8385 /* SceneDelegate.swift */,
 				5175151423F36485005E8385 /* ViewController.swift */,
 				5175151623F36485005E8385 /* Main.storyboard */,
+				5175152423F36531005E8385 /* GoogleService-Info.plist */,
 				5175151923F36486005E8385 /* Assets.xcassets */,
 				5175151B23F36486005E8385 /* LaunchScreen.storyboard */,
 				5175151E23F36486005E8385 /* Info.plist */,
 			);
 			path = Toast;
+			sourceTree = "<group>";
+		};
+		5175152623F36B8B005E8385 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5175152723F36B93005E8385 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5175153323F37B18005E8385 /* CardView.swift */,
+				5175153A23F392C8005E8385 /* CustomButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5175152823F36B98005E8385 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5175152923F36BB0005E8385 /* SignInViewController.swift */,
+				5175153123F378D4005E8385 /* RegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5175152B23F36EC0005E8385 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5175152C23F36ED5005E8385 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5175152E23F36F6E005E8385 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5175152F23F36F7A005E8385 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5175153723F38900005E8385 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5175153823F38914005E8385 /* Shree Devanagari 714.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		93F855307A63C21D71BE2320 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D4BB8206296815FA4F7EDAD /* Pods_Toast.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5175152123F36486005E8385 /* Build configuration list for PBXNativeTarget "Toast" */;
 			buildPhases = (
+				302A01348AC01DA773D6BD87 /* [CP] Check Pods Manifest.lock */,
 				5175150923F36485005E8385 /* Sources */,
 				5175150A23F36485005E8385 /* Frameworks */,
 				5175150B23F36485005E8385 /* Resources */,
+				6CBC5F1FC7271D66FA49A654 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,19 +226,98 @@
 				5175151D23F36486005E8385 /* LaunchScreen.storyboard in Resources */,
 				5175151A23F36486005E8385 /* Assets.xcassets in Resources */,
 				5175151823F36485005E8385 /* Main.storyboard in Resources */,
+				5175152523F36531005E8385 /* GoogleService-Info.plist in Resources */,
+				5175153923F38914005E8385 /* Shree Devanagari 714.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		302A01348AC01DA773D6BD87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Toast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CBC5F1FC7271D66FA49A654 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Toast/Pods-Toast-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/abseil/absl.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/absl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Toast/Pods-Toast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5175150923F36485005E8385 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5175152A23F36BB0005E8385 /* SignInViewController.swift in Sources */,
 				5175151523F36485005E8385 /* ViewController.swift in Sources */,
+				5175153B23F392C8005E8385 /* CustomButton.swift in Sources */,
+				5175153223F378D4005E8385 /* RegisterViewController.swift in Sources */,
 				5175151123F36485005E8385 /* AppDelegate.swift in Sources */,
 				5175151323F36485005E8385 /* SceneDelegate.swift in Sources */,
+				5175152D23F36ED5005E8385 /* DataService.swift in Sources */,
+				5175153423F37B18005E8385 /* CardView.swift in Sources */,
+				5175153023F36F7A005E8385 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +459,7 @@
 		};
 		5175152223F36486005E8385 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60777919E55D7944C1DEED0A /* Pods-Toast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +478,7 @@
 		};
 		5175152323F36486005E8385 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8690AC124E1A82FEC42845E4 /* Pods-Toast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
