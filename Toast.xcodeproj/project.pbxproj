@@ -22,6 +22,9 @@
 		5175153423F37B18005E8385 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175153323F37B18005E8385 /* CardView.swift */; };
 		5175153923F38914005E8385 /* Shree Devanagari 714.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5175153823F38914005E8385 /* Shree Devanagari 714.otf */; };
 		5175153B23F392C8005E8385 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175153A23F392C8005E8385 /* CustomButton.swift */; };
+		5175153F23F4D276005E8385 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175153E23F4D276005E8385 /* SignUpViewController.swift */; };
+		5175154123F4DD8D005E8385 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175154023F4DD8D005E8385 /* ProfileView.swift */; };
+		5175154323F4DE96005E8385 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175154223F4DE96005E8385 /* ProfileImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		5175153323F37B18005E8385 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		5175153823F38914005E8385 /* Shree Devanagari 714.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shree Devanagari 714.otf"; sourceTree = "<group>"; };
 		5175153A23F392C8005E8385 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		5175153E23F4D276005E8385 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5175154023F4DD8D005E8385 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5175154223F4DE96005E8385 /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 		60777919E55D7944C1DEED0A /* Pods-Toast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Toast/Pods-Toast.debug.xcconfig"; sourceTree = "<group>"; };
 		6D4BB8206296815FA4F7EDAD /* Pods_Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8690AC124E1A82FEC42845E4 /* Pods-Toast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast.release.xcconfig"; path = "Pods/Target Support Files/Pods-Toast/Pods-Toast.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +124,8 @@
 			children = (
 				5175153323F37B18005E8385 /* CardView.swift */,
 				5175153A23F392C8005E8385 /* CustomButton.swift */,
+				5175154023F4DD8D005E8385 /* ProfileView.swift */,
+				5175154223F4DE96005E8385 /* ProfileImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 			children = (
 				5175152923F36BB0005E8385 /* SignInViewController.swift */,
 				5175153123F378D4005E8385 /* RegisterViewController.swift */,
+				5175153E23F4D276005E8385 /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,6 +275,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Toast/Pods-Toast-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/FRHyperLabel/FRHyperLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
@@ -284,6 +294,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FRHyperLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
@@ -310,13 +321,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5175152A23F36BB0005E8385 /* SignInViewController.swift in Sources */,
+				5175154323F4DE96005E8385 /* ProfileImage.swift in Sources */,
 				5175151523F36485005E8385 /* ViewController.swift in Sources */,
 				5175153B23F392C8005E8385 /* CustomButton.swift in Sources */,
 				5175153223F378D4005E8385 /* RegisterViewController.swift in Sources */,
+				5175153F23F4D276005E8385 /* SignUpViewController.swift in Sources */,
 				5175151123F36485005E8385 /* AppDelegate.swift in Sources */,
 				5175151323F36485005E8385 /* SceneDelegate.swift in Sources */,
 				5175152D23F36ED5005E8385 /* DataService.swift in Sources */,
 				5175153423F37B18005E8385 /* CardView.swift in Sources */,
+				5175154123F4DD8D005E8385 /* ProfileView.swift in Sources */,
 				5175153023F36F7A005E8385 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

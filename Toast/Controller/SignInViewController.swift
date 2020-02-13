@@ -11,9 +11,12 @@ import Firebase
 import FirebaseAuth
 import SwiftKeychainWrapper
 import MaterialComponents.MaterialTextFields
+import FRHyperLabel
 
 class SignInViewController: UIViewController {
 
+    //@IBOutlet weak var signUpLabel: FRHyperLabel!
+    @IBOutlet weak var signUpLabel: UILabel!
     @IBOutlet weak var emailAddressField: MDCTextField!
     @IBOutlet weak var passwordField: MDCTextField!
     @IBOutlet weak var signUpButton: UIButton!
@@ -22,15 +25,14 @@ class SignInViewController: UIViewController {
     lazy var themeColor = hexStringToUIColor(hex: PRIMARY_THEME_COLOR)
     
     @IBOutlet weak var stackView: UIStackView!
+    var textArray = [String]()
+    var colorArray = [UIColor]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTextBoxes()
-        
-        //stackView.setCustomSpacing(8.0, after: signUpButton)
-
-        // Do any additional setup after loading the view.
+        setupSignUpButton()
     }
     
     @IBAction func signInPressed(_ sender: Any) {
@@ -63,6 +65,7 @@ class SignInViewController: UIViewController {
     }
     
     func setupTextBoxes() {
+        
         emailController = MDCTextInputControllerOutlined(textInput: emailAddressField)
         emailController!.placeholderText = "Email"
         emailController!.inlinePlaceholderColor = UIColor.label
@@ -81,14 +84,66 @@ class SignInViewController: UIViewController {
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupTextField (field: MDCTextField, placeholder: String, themeColor: UIColor) {
+        var controller: MDCTextInputControllerOutlined?
+        controller = MDCTextInputControllerOutlined(textInput: field)
+        controller!.placeholderText = placeholder
+        controller!.inlinePlaceholderColor = UIColor.label
+        controller!.floatingPlaceholderActiveColor = themeColor
+        controller!.activeColor = UIColor.systemGray6
+        controller!.disabledColor = UIColor.systemGray6
+        controller!.textInsets(UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16))
+        
     }
-    */
+    
+    func setupSignUpButton() {
+        textArray.append("Don't have an account?")
+        textArray.append("Sign Up")
+        
+        colorArray.append(UIColor.label)
+        colorArray.append(themeColor)
+        
+        self.signUpLabel.attributedText = getAttributedString(arrayText: textArray, arrayColors: colorArray)
+        
+        self.signUpLabel.isUserInteractionEnabled = true
+        let tapgesture = UITapGestureRecognizer(target: self, action: #selector(tappedOnLabel(_ :)))
+        tapgesture.numberOfTapsRequired = 1
+        self.signUpLabel.addGestureRecognizer(tapgesture)
+    }
+    
+    
+    
+    func getAttributedString(arrayText:[String]?, arrayColors:[UIColor]?) -> NSMutableAttributedString {
+        
+        let finalAttributedString = NSMutableAttributedString()
+        
+        for i in 0 ..< (arrayText?.count)! {
+            
+            let attributes = [NSAttributedString.Key.foregroundColor: arrayColors?[i]]
+            let attributedStr = (NSAttributedString.init(string: arrayText?[i] ?? "", attributes: attributes as [NSAttributedString.Key : Any]))
+            
+            if i != 0 {
+                
+                finalAttributedString.append(NSAttributedString.init(string: " "))
+            }
+            
+            finalAttributedString.append(attributedStr)
+        }
+        
+        return finalAttributedString
+    }
+
+    @objc func tappedOnLabel(_ gesture: UITapGestureRecognizer) {
+        guard let text = self.signUpLabel.text else { return }
+        let conditionsRange = (text as NSString).range(of: "Sign Up")
+        //let cancellationRange = (text as NSString).range(of: "the cancellation policies")
+        
+        if gesture.didTapAttributedTextInLabel(label: self.signUpLabel, inRange: conditionsRange) {
+            
+            self.performSegue(withIdentifier: "goToSignUp", sender: self)
+            
+        }
+    }
+    
 
 }

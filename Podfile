@@ -13,6 +13,7 @@ target 'Toast' do
   pod 'Firebase/Firestore'
   pod 'SwiftKeychainWrapper'
   pod 'MaterialComponents/TextFields'
+  pod 'FRHyperLabel'
 
   # Pods for Toast
 
