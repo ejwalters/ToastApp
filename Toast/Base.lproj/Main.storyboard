@@ -24,30 +24,30 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="366"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsU-s7-ceC">
-                                <rect key="frame" x="20" y="396" width="374" height="37.333333333333314"/>
+                                <rect key="frame" x="20" y="396" width="374" height="43.666666666666686"/>
                                 <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W0B-bv-tny" customClass="MDCTextField">
-                                <rect key="frame" x="20" y="438.33333333333331" width="374" height="34"/>
+                                <rect key="frame" x="20" y="444.66666666666669" width="374" height="34"/>
                                 <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ud2-cj-ZTo" customClass="MDCTextField">
-                                <rect key="frame" x="20" y="477.33333333333331" width="374" height="34"/>
+                                <rect key="frame" x="20" y="483.66666666666669" width="374" height="34.000000000000057"/>
                                 <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uZ-lF-Rer">
-                                <rect key="frame" x="20" y="511.33333333333326" width="374" height="28"/>
+                                <rect key="frame" x="20" y="517.66666666666663" width="374" height="30"/>
                                 <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="13"/>
                                 <state key="normal" title="Forgot your password?">
                                     <color key="titleColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdI-9s-2hU" customClass="CustomButton" customModule="Toast" customModuleProvider="target">
-                                <rect key="frame" x="20" y="569.33333333333337" width="374" height="60"/>
+                                <rect key="frame" x="20" y="577.66666666666663" width="374" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="z0C-VQ-qgB"/>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account? Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndz-UH-67l">
-                                <rect key="frame" x="20" y="659.33333333333337" width="374" height="16.333333333333371"/>
+                                <rect key="frame" x="20" y="667.66666666666663" width="374" height="19"/>
                                 <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -147,7 +147,7 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPe-jI-Qly">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPe-jI-Qly" customClass="CustomButton" customModule="Toast" customModuleProvider="target">
                                 <rect key="frame" x="20" y="361" width="374" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -158,13 +158,14 @@
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsy-ZC-F4q">
-                                <rect key="frame" x="157" y="50" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsy-ZC-F4q">
+                                <rect key="frame" x="179" y="76" width="56" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="5zv-QX-Vrw"/>
-                                    <constraint firstAttribute="height" constant="100" id="Ovm-l8-jqm"/>
+                                    <constraint firstAttribute="width" constant="56" id="5zv-QX-Vrw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56" id="WFA-lE-TDL"/>
+                                    <constraint firstAttribute="height" constant="48" id="XAJ-fI-2Mi"/>
                                 </constraints>
-                                <state key="normal" image="camerablack"/>
+                                <state key="normal" image="camera"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cqf-BY-Mdz" customClass="MDCTextField">
                                 <rect key="frame" x="20" y="268" width="374" height="34"/>
@@ -186,6 +187,7 @@
                         <constraints>
                             <constraint firstItem="dzm-g9-LYV" firstAttribute="trailing" secondItem="2VH-9H-er6" secondAttribute="trailing" constant="20" id="2Jd-Iv-40e"/>
                             <constraint firstItem="2VH-9H-er6" firstAttribute="leading" secondItem="dzm-g9-LYV" secondAttribute="leading" constant="20" id="318-lu-feY"/>
+                            <constraint firstItem="2VH-9H-er6" firstAttribute="top" secondItem="Wsy-ZC-F4q" secondAttribute="bottom" constant="56" id="6ce-Qv-XDh"/>
                             <constraint firstItem="2VH-9H-er6" firstAttribute="top" secondItem="kb0-2b-vDS" secondAttribute="bottom" constant="30" id="7nM-Mj-VpR"/>
                             <constraint firstItem="6gz-N0-fwb" firstAttribute="centerX" secondItem="W43-G3-1Kt" secondAttribute="centerX" id="7oU-Ul-YQr"/>
                             <constraint firstItem="kb0-2b-vDS" firstAttribute="top" secondItem="dzm-g9-LYV" secondAttribute="top" constant="50" id="CQR-ob-JI7"/>
@@ -202,7 +204,8 @@
                             <constraint firstItem="dzm-g9-LYV" firstAttribute="trailing" secondItem="cPe-jI-Qly" secondAttribute="trailing" constant="20" id="mzw-hb-sg6"/>
                             <constraint firstItem="cPe-jI-Qly" firstAttribute="top" secondItem="hIB-Au-rcS" secondAttribute="bottom" constant="15" id="nAX-H4-gqN"/>
                             <constraint firstItem="Wsy-ZC-F4q" firstAttribute="centerX" secondItem="W43-G3-1Kt" secondAttribute="centerX" id="rFq-dv-phb"/>
-                            <constraint firstItem="Wsy-ZC-F4q" firstAttribute="top" secondItem="dzm-g9-LYV" secondAttribute="top" constant="50" id="shm-W5-4OR"/>
+                            <constraint firstItem="Wsy-ZC-F4q" firstAttribute="centerX" secondItem="W43-G3-1Kt" secondAttribute="centerX" id="wPA-WH-Ip0"/>
+                            <constraint firstItem="Wsy-ZC-F4q" firstAttribute="top" secondItem="dzm-g9-LYV" secondAttribute="top" constant="76" id="wSZ-Ja-gaJ"/>
                             <constraint firstItem="dzm-g9-LYV" firstAttribute="trailing" secondItem="EE3-CE-nQk" secondAttribute="trailing" constant="20" id="xee-X0-Wdh"/>
                             <constraint firstItem="cqf-BY-Mdz" firstAttribute="leading" secondItem="dzm-g9-LYV" secondAttribute="leading" constant="20" id="y9Y-Em-DOf"/>
                         </constraints>
@@ -259,6 +262,6 @@
     </scenes>
     <resources>
         <image name="SignInColors" width="500" height="459"/>
-        <image name="camerablack" width="128" height="128"/>
+        <image name="camera" width="224" height="200"/>
     </resources>
 </document>
