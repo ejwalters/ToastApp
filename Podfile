@@ -14,6 +14,7 @@ target 'Toast' do
   pod 'SwiftKeychainWrapper'
   pod 'MaterialComponents/TextFields'
   pod 'FRHyperLabel'
+  pod 'PopupDialog', '~> 1.1'
 
   # Pods for Toast
 

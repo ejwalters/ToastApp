@@ -75,8 +75,8 @@
                             <constraint firstItem="OsU-s7-ceC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8bx-Xg-WHe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ud2-cj-ZTo" secondAttribute="trailing" constant="20" id="Hkd-XZ-PJX"/>
                             <constraint firstItem="4Zw-Jp-DUP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Jd6-Nt-nXh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Zw-Jp-DUP" secondAttribute="bottom" constant="496" id="LYZ-1Z-Uck"/>
                             <constraint firstItem="Ud2-cj-ZTo" firstAttribute="top" secondItem="W0B-bv-tny" secondAttribute="bottom" constant="5" id="McL-ZB-jJ0"/>
+                            <constraint firstItem="4Zw-Jp-DUP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.408482" id="STO-wf-Wti"/>
                             <constraint firstItem="OsU-s7-ceC" firstAttribute="top" secondItem="4Zw-Jp-DUP" secondAttribute="bottom" constant="30" id="Um9-c9-pqy"/>
                             <constraint firstItem="W0B-bv-tny" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Y7g-ic-0Fp"/>
                             <constraint firstItem="2uZ-lF-Rer" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aqb-Dx-TQI"/>
@@ -157,6 +157,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpPressed:" destination="5VI-b0-Zt4" eventType="touchUpInside" id="8Jo-Uw-WnU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsy-ZC-F4q">
                                 <rect key="frame" x="179" y="76" width="56" height="48"/>
@@ -166,6 +169,9 @@
                                     <constraint firstAttribute="height" constant="48" id="XAJ-fI-2Mi"/>
                                 </constraints>
                                 <state key="normal" image="camera"/>
+                                <connections>
+                                    <action selector="addImageButtonTapped:" destination="5VI-b0-Zt4" eventType="touchUpInside" id="Jvr-zP-Mka"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cqf-BY-Mdz" customClass="MDCTextField">
                                 <rect key="frame" x="20" y="268" width="374" height="34"/>
@@ -213,10 +219,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="DK1-b6-0lR"/>
                     <connections>
+                        <outlet property="cameraButton" destination="Wsy-ZC-F4q" id="Qbq-bv-Gxe"/>
                         <outlet property="emailAddress" destination="EE3-CE-nQk" id="qyz-5B-ppj"/>
                         <outlet property="firstName" destination="Kgv-r7-X2X" id="CaC-px-cSa"/>
                         <outlet property="lastName" destination="cry-y1-wLV" id="uUm-BA-CVM"/>
                         <outlet property="password" destination="cqf-BY-Mdz" id="NT6-Uq-uk2"/>
+                        <outlet property="profileImage" destination="6gz-N0-fwb" id="uhC-oz-ab5"/>
                         <outlet property="validatePassword" destination="hIB-Au-rcS" id="JNL-8F-IcL"/>
                     </connections>
                 </viewController>

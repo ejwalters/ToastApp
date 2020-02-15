@@ -12,6 +12,7 @@ import FirebaseAuth
 import SwiftKeychainWrapper
 import MaterialComponents.MaterialTextFields
 import FRHyperLabel
+import PopupDialog
 
 class SignInViewController: UIViewController {
 
@@ -31,8 +32,31 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        configureKeyboard()
         setupTextBoxes()
         setupSignUpButton()
+    }
+    
+    @objc func keyboardWillShow(sender: NSNotification) {
+         self.view.frame.origin.y = -150 // Move view 150 points upward
+    }
+
+    @objc func keyboardWillHide(sender: NSNotification) {
+         self.view.frame.origin.y = 0 // Move view to original position
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    func configureKeyboard() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(sender:)), name: UIResponder.keyboardWillShowNotification, object: nil);
+
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: UIResponder.keyboardWillHideNotification, object: nil);
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SignInViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     
     @IBAction func signInPressed(_ sender: Any) {
@@ -46,15 +70,35 @@ class SignInViewController: UIViewController {
                     let userData = ["provider": user.user.providerID]
                     self!.completeSignIn(id: uid, userData: userData)
                 } else {
-                    let alert = UIAlertController(title: "Email/Password Incorrect", message: "The username/password combination is incorrect. Try again.", preferredStyle: UIAlertController.Style.alert)
-                    alert.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: nil))
-                    self!.present(alert, animated: true, completion: nil)
+                    self!.presentDialogBox()
                 }
             }
         }
 
             
         
+    }
+    
+    func presentDialogBox() {
+        let title = "Email/Password Incorrect"
+        let message = "The username/password combination is incorrect. Try again."
+        //let image = UIImage(named: "pexels-photo-103290")
+
+        // Create the dialog
+        let popup = PopupDialog(title: title, message: message)
+
+        // Create buttons
+        let buttonOne = CancelButton(title: "Try Again") {
+            print("You canceled the car dialog.")
+        }
+
+        // Add buttons to dialog
+        // Alternatively, you can use popup.addButton(buttonOne)
+        // to add a single button
+        popup.addButtons([buttonOne])
+
+        // Present dialog
+        self.present(popup, animated: true, completion: nil)
     }
     
     func completeSignIn(id: String, userData: Dictionary<String, String>) {

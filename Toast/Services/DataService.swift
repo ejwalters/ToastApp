@@ -26,6 +26,7 @@ class DataService {
     
     // Storage references
     private var _REF_POST_IMAGES = STORAGE_BASE.child("post-pics")
+    private var _REF_PROFILE_IMAGES = STORAGE_BASE.child("profile-pics")
     
     var REF_BASE: DatabaseReference {
         return _REF_BASE
@@ -46,13 +47,17 @@ class DataService {
     var REF_USER_CURRENT: DatabaseReference {
         //let uid = KeychainWrapper.stringForKey(KEY_UID)
         //let uid = KeychainWrapper.set(KEY_UID)
-        let uid = KeychainWrapper.defaultKeychainWrapper.string(forKey: KEY_UID)
+        let uid = KeychainWrapper.standard.string(forKey: KEY_UID)
         let user = REF_USERS.child(uid!)
         return user
     }
     
     var REF_POST_IMAGES: StorageReference {
         return _REF_POST_IMAGES
+    }
+    
+    var REF_PROFILE_IMAGES: StorageReference {
+        return _REF_PROFILE_IMAGES
     }
     
     func createFirbaseDBUser(uid: String, userData: Dictionary<String, String>) {
