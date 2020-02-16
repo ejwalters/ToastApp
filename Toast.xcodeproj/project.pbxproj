@@ -18,7 +18,6 @@
 		5175152A23F36BB0005E8385 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175152923F36BB0005E8385 /* SignInViewController.swift */; };
 		5175152D23F36ED5005E8385 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175152C23F36ED5005E8385 /* DataService.swift */; };
 		5175153023F36F7A005E8385 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175152F23F36F7A005E8385 /* Constants.swift */; };
-		5175153223F378D4005E8385 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175153123F378D4005E8385 /* RegisterViewController.swift */; };
 		5175153423F37B18005E8385 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175153323F37B18005E8385 /* CardView.swift */; };
 		5175153923F38914005E8385 /* Shree Devanagari 714.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5175153823F38914005E8385 /* Shree Devanagari 714.otf */; };
 		5175153B23F392C8005E8385 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175153A23F392C8005E8385 /* CustomButton.swift */; };
@@ -26,6 +25,18 @@
 		5175154123F4DD8D005E8385 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175154023F4DD8D005E8385 /* ProfileView.swift */; };
 		5175154323F4DE96005E8385 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175154223F4DE96005E8385 /* ProfileImage.swift */; };
 		5175156523F87001005E8385 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175156423F87001005E8385 /* Helpers.swift */; };
+		51F9C94B23F885B100AD4648 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C94A23F885B100AD4648 /* FeedViewController.swift */; };
+		51F9C94D23F8983800AD4648 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C94C23F8983800AD4648 /* HeaderView.swift */; };
+		51F9C94F23F8C17F00AD4648 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C94E23F8C17F00AD4648 /* ProfileViewController.swift */; };
+		51F9C95123F8C1A700AD4648 /* SearchUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C95023F8C1A700AD4648 /* SearchUsersViewController.swift */; };
+		51F9C95323F8C1D600AD4648 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C95223F8C1D600AD4648 /* AddPostViewController.swift */; };
+		51F9C95523F8C24F00AD4648 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C95423F8C24F00AD4648 /* CustomTabBarController.swift */; };
+		51F9C95723F8C36100AD4648 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C95623F8C36100AD4648 /* ActivityViewController.swift */; };
+		51F9C95923F97DFE00AD4648 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C95823F97DFE00AD4648 /* PostCell.swift */; };
+		51F9C95B23F97E3400AD4648 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C95A23F97E3400AD4648 /* Post.swift */; };
+		51F9C95D23F9834C00AD4648 /* PostProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C95C23F9834C00AD4648 /* PostProfileView.swift */; };
+		51F9C95F23F9880B00AD4648 /* PerfectCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C95E23F9880B00AD4648 /* PerfectCircle.swift */; };
+		51F9C96123F9DCF100AD4648 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C96023F9DCF100AD4648 /* CellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +52,6 @@
 		5175152923F36BB0005E8385 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		5175152C23F36ED5005E8385 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		5175152F23F36F7A005E8385 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		5175153123F378D4005E8385 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5175153323F37B18005E8385 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		5175153823F38914005E8385 /* Shree Devanagari 714.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shree Devanagari 714.otf"; sourceTree = "<group>"; };
 		5175153A23F392C8005E8385 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -49,6 +59,18 @@
 		5175154023F4DD8D005E8385 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5175154223F4DE96005E8385 /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 		5175156423F87001005E8385 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		51F9C94A23F885B100AD4648 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		51F9C94C23F8983800AD4648 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		51F9C94E23F8C17F00AD4648 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		51F9C95023F8C1A700AD4648 /* SearchUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersViewController.swift; sourceTree = "<group>"; };
+		51F9C95223F8C1D600AD4648 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		51F9C95423F8C24F00AD4648 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		51F9C95623F8C36100AD4648 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		51F9C95823F97DFE00AD4648 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		51F9C95A23F97E3400AD4648 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		51F9C95C23F9834C00AD4648 /* PostProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProfileView.swift; sourceTree = "<group>"; };
+		51F9C95E23F9880B00AD4648 /* PerfectCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectCircle.swift; sourceTree = "<group>"; };
+		51F9C96023F9DCF100AD4648 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		60777919E55D7944C1DEED0A /* Pods-Toast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Toast/Pods-Toast.debug.xcconfig"; sourceTree = "<group>"; };
 		6D4BB8206296815FA4F7EDAD /* Pods_Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8690AC124E1A82FEC42845E4 /* Pods-Toast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast.release.xcconfig"; path = "Pods/Target Support Files/Pods-Toast/Pods-Toast.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +139,7 @@
 		5175152623F36B8B005E8385 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				51F9C95A23F97E3400AD4648 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,10 +147,15 @@
 		5175152723F36B93005E8385 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				51F9C95823F97DFE00AD4648 /* PostCell.swift */,
 				5175153323F37B18005E8385 /* CardView.swift */,
 				5175153A23F392C8005E8385 /* CustomButton.swift */,
 				5175154023F4DD8D005E8385 /* ProfileView.swift */,
 				5175154223F4DE96005E8385 /* ProfileImage.swift */,
+				51F9C94C23F8983800AD4648 /* HeaderView.swift */,
+				51F9C95C23F9834C00AD4648 /* PostProfileView.swift */,
+				51F9C95E23F9880B00AD4648 /* PerfectCircle.swift */,
+				51F9C96023F9DCF100AD4648 /* CellView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,8 +164,13 @@
 			isa = PBXGroup;
 			children = (
 				5175152923F36BB0005E8385 /* SignInViewController.swift */,
-				5175153123F378D4005E8385 /* RegisterViewController.swift */,
 				5175153E23F4D276005E8385 /* SignUpViewController.swift */,
+				51F9C94A23F885B100AD4648 /* FeedViewController.swift */,
+				51F9C94E23F8C17F00AD4648 /* ProfileViewController.swift */,
+				51F9C95023F8C1A700AD4648 /* SearchUsersViewController.swift */,
+				51F9C95223F8C1D600AD4648 /* AddPostViewController.swift */,
+				51F9C95423F8C24F00AD4648 /* CustomTabBarController.swift */,
+				51F9C95623F8C36100AD4648 /* ActivityViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -328,18 +361,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				5175152A23F36BB0005E8385 /* SignInViewController.swift in Sources */,
+				51F9C95123F8C1A700AD4648 /* SearchUsersViewController.swift in Sources */,
+				51F9C95323F8C1D600AD4648 /* AddPostViewController.swift in Sources */,
 				5175154323F4DE96005E8385 /* ProfileImage.swift in Sources */,
 				5175151523F36485005E8385 /* ViewController.swift in Sources */,
+				51F9C95723F8C36100AD4648 /* ActivityViewController.swift in Sources */,
 				5175153B23F392C8005E8385 /* CustomButton.swift in Sources */,
-				5175153223F378D4005E8385 /* RegisterViewController.swift in Sources */,
 				5175153F23F4D276005E8385 /* SignUpViewController.swift in Sources */,
+				51F9C95F23F9880B00AD4648 /* PerfectCircle.swift in Sources */,
 				5175151123F36485005E8385 /* AppDelegate.swift in Sources */,
+				51F9C95523F8C24F00AD4648 /* CustomTabBarController.swift in Sources */,
+				51F9C95D23F9834C00AD4648 /* PostProfileView.swift in Sources */,
 				5175151323F36485005E8385 /* SceneDelegate.swift in Sources */,
 				5175152D23F36ED5005E8385 /* DataService.swift in Sources */,
+				51F9C95B23F97E3400AD4648 /* Post.swift in Sources */,
 				5175153423F37B18005E8385 /* CardView.swift in Sources */,
 				5175156523F87001005E8385 /* Helpers.swift in Sources */,
 				5175154123F4DD8D005E8385 /* ProfileView.swift in Sources */,
+				51F9C94B23F885B100AD4648 /* FeedViewController.swift in Sources */,
+				51F9C94F23F8C17F00AD4648 /* ProfileViewController.swift in Sources */,
+				51F9C96123F9DCF100AD4648 /* CellView.swift in Sources */,
 				5175153023F36F7A005E8385 /* Constants.swift in Sources */,
+				51F9C94D23F8983800AD4648 /* HeaderView.swift in Sources */,
+				51F9C95923F97DFE00AD4648 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,24 +32,35 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureKeyboard()
         setupTextBoxes()
         setupSignUpButton()
     }
     
+    //Function to move the view so the fields aren't hidden by keyboard
     @objc func keyboardWillShow(sender: NSNotification) {
          self.view.frame.origin.y = -150 // Move view 150 points upward
     }
 
+    //Function to move fields to original position when keyboard is dismissed
     @objc func keyboardWillHide(sender: NSNotification) {
          self.view.frame.origin.y = 0 // Move view to original position
     }
     
+    //Clicking outside of the keyboard dismisses the keyboard
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        //Check if the user is signed in already
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID){
+            print("ERIC: ID found in keychain")
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
+    }
+    
+    //Adding observers to keyboard so we know when to adjust view for keyboard
     func configureKeyboard() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(sender:)), name: UIResponder.keyboardWillShowNotification, object: nil);
 
@@ -59,9 +70,8 @@ class SignInViewController: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
+    //User pressed sign in so we will check if the credentials are good and then sign in
     @IBAction func signInPressed(_ sender: Any) {
-        
-        
         if let email = emailAddressField.text, let pwd = passwordField.text {
             Auth.auth().signIn(withEmail: email, password: pwd) { [weak self] user, error in
                 guard self != nil else { return }
@@ -74,11 +84,9 @@ class SignInViewController: UIViewController {
                 }
             }
         }
-
-            
-        
     }
     
+    //Building the dialog box to display sign in error
     func presentDialogBox() {
         let title = "Email/Password Incorrect"
         let message = "The username/password combination is incorrect. Try again."
@@ -101,6 +109,7 @@ class SignInViewController: UIViewController {
         self.present(popup, animated: true, completion: nil)
     }
     
+    //Helper function to sign in the user and add to keychain
     func completeSignIn(id: String, userData: Dictionary<String, String>) {
         DataService.ds.createFirbaseDBUser(uid: id, userData: userData)
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
@@ -108,6 +117,7 @@ class SignInViewController: UIViewController {
         performSegue(withIdentifier: "goToFeed", sender: nil)
     }
     
+    //Setting up the material design text fields
     func setupTextBoxes() {
         
         emailController = MDCTextInputControllerOutlined(textInput: emailAddressField)
@@ -128,18 +138,7 @@ class SignInViewController: UIViewController {
         
     }
     
-    func setupTextField (field: MDCTextField, placeholder: String, themeColor: UIColor) {
-        var controller: MDCTextInputControllerOutlined?
-        controller = MDCTextInputControllerOutlined(textInput: field)
-        controller!.placeholderText = placeholder
-        controller!.inlinePlaceholderColor = UIColor.label
-        controller!.floatingPlaceholderActiveColor = themeColor
-        controller!.activeColor = UIColor.systemGray6
-        controller!.disabledColor = UIColor.systemGray6
-        controller!.textInsets(UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16))
-        
-    }
-    
+    //Creating the label for creating an account where only Sign Up is clickable
     func setupSignUpButton() {
         textArray.append("Don't have an account?")
         textArray.append("Sign Up")
@@ -155,8 +154,7 @@ class SignInViewController: UIViewController {
         self.signUpLabel.addGestureRecognizer(tapgesture)
     }
     
-    
-    
+    //Get the string that should be clickable
     func getAttributedString(arrayText:[String]?, arrayColors:[UIColor]?) -> NSMutableAttributedString {
         
         let finalAttributedString = NSMutableAttributedString()
@@ -177,6 +175,7 @@ class SignInViewController: UIViewController {
         return finalAttributedString
     }
 
+    //See if the attributed string was clicked on
     @objc func tappedOnLabel(_ gesture: UITapGestureRecognizer) {
         guard let text = self.signUpLabel.text else { return }
         let conditionsRange = (text as NSString).range(of: "Sign Up")
