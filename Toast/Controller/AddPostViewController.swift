@@ -35,9 +35,10 @@ class AddPostViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //AddPostViewController.hidesBottomBarWhenPushed = true
         
         //postCategory.addTarget(self, action: #selector(myTargetFunction), for: .touchDown)
-
+        //self.tabBarController?.tabBar.isHidden = true
         imagePicker.delegate = self
         viewOutline.layer.borderColor = myColor.cgColor
         viewOutline.layer.borderWidth = 1.0

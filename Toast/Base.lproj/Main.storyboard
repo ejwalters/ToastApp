@@ -24,30 +24,30 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="268.66666666666669"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsU-s7-ceC">
-                                <rect key="frame" x="20" y="298.66666666666669" width="374" height="37.333333333333314"/>
+                                <rect key="frame" x="20" y="298.66666666666669" width="374" height="43.666666666666686"/>
                                 <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W0B-bv-tny" customClass="CustomTextField" customModule="Toast" customModuleProvider="target">
-                                <rect key="frame" x="20" y="341" width="374" height="34"/>
+                                <rect key="frame" x="20" y="347.33333333333331" width="374" height="34"/>
                                 <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ud2-cj-ZTo" customClass="CustomTextField" customModule="Toast" customModuleProvider="target">
-                                <rect key="frame" x="20" y="380" width="374" height="34"/>
+                                <rect key="frame" x="20" y="386.33333333333331" width="374" height="34"/>
                                 <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uZ-lF-Rer">
-                                <rect key="frame" x="20" y="414" width="374" height="28"/>
+                                <rect key="frame" x="20" y="420.33333333333331" width="374" height="30"/>
                                 <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="13"/>
                                 <state key="normal" title="Forgot your password?">
                                     <color key="titleColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdI-9s-2hU" customClass="CustomButton" customModule="Toast" customModuleProvider="target">
-                                <rect key="frame" x="20" y="472" width="374" height="60"/>
+                                <rect key="frame" x="20" y="480.33333333333331" width="374" height="59.999999999999943"/>
                                 <color key="backgroundColor" red="0.0" green="0.60784313729999995" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="z0C-VQ-qgB"/>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account? Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndz-UH-67l">
-                                <rect key="frame" x="20" y="562" width="374" height="16.333333333333371"/>
+                                <rect key="frame" x="20" y="570.33333333333337" width="374" height="19"/>
                                 <fontDescription key="fontDescription" name="ShreeDev0714" family="Shree Devanagari 714" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -235,7 +235,7 @@
         <!--Add Post View Controller-->
         <scene sceneID="9cj-qR-DKi">
             <objects>
-                <viewController id="hPa-Zy-LTg" customClass="AddPostViewController" customModule="Toast" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addPost" modalPresentationStyle="overCurrentContext" id="hPa-Zy-LTg" customClass="AddPostViewController" customModule="Toast" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l6K-VT-j2q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -295,7 +295,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKi-bQ-cak" customClass="PMSuperButton" customModule="PMSuperButton">
-                                <rect key="frame" x="20" y="393" width="374" height="60"/>
+                                <rect key="frame" x="20" y="436" width="374" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="aZa-ay-g7g"/>
                                 </constraints>
@@ -319,9 +319,37 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4b-B0-09n" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="20" y="398" width="374" height="23"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" red="0.0" green="0.60784313729999995" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="MKi-bQ-cak" firstAttribute="top" secondItem="r4b-B0-09n" secondAttribute="bottom" constant="15" id="10j-u9-WsU"/>
                             <constraint firstItem="6ch-Jx-Hq4" firstAttribute="trailing" secondItem="MKi-bQ-cak" secondAttribute="trailing" constant="20" id="5Sj-Xu-XfA"/>
                             <constraint firstItem="2se-Ph-ZKE" firstAttribute="top" secondItem="6ch-Jx-Hq4" secondAttribute="top" constant="40" id="8RG-u7-qrg"/>
                             <constraint firstItem="0Vb-hQ-0wR" firstAttribute="leading" secondItem="6ch-Jx-Hq4" secondAttribute="leading" constant="20" id="8wM-1y-LlD"/>
@@ -329,14 +357,16 @@
                             <constraint firstItem="0Vb-hQ-0wR" firstAttribute="height" secondItem="l6K-VT-j2q" secondAttribute="height" multiplier="0.26" id="Aq0-gS-cMu"/>
                             <constraint firstItem="35p-fT-NG9" firstAttribute="leading" secondItem="6ch-Jx-Hq4" secondAttribute="leading" constant="20" id="ECB-H6-8Ng"/>
                             <constraint firstItem="0Vb-hQ-0wR" firstAttribute="top" secondItem="6ch-Jx-Hq4" secondAttribute="top" constant="40" id="HN3-Us-IJ3"/>
+                            <constraint firstItem="r4b-B0-09n" firstAttribute="leading" secondItem="6ch-Jx-Hq4" secondAttribute="leading" constant="20" id="JO1-MO-vSj"/>
                             <constraint firstItem="MKi-bQ-cak" firstAttribute="leading" secondItem="6ch-Jx-Hq4" secondAttribute="leading" constant="20" id="Kk7-ny-oct"/>
+                            <constraint firstItem="6ch-Jx-Hq4" firstAttribute="trailing" secondItem="r4b-B0-09n" secondAttribute="trailing" constant="20" id="KqN-mJ-d61"/>
                             <constraint firstItem="6ch-Jx-Hq4" firstAttribute="trailing" secondItem="35p-fT-NG9" secondAttribute="trailing" constant="20" id="OtA-yo-BZ7"/>
                             <constraint firstItem="kzM-jU-VnP" firstAttribute="top" secondItem="0Vb-hQ-0wR" secondAttribute="bottom" constant="20" id="SHt-yv-dhT"/>
-                            <constraint firstItem="MKi-bQ-cak" firstAttribute="top" secondItem="kzM-jU-VnP" secondAttribute="bottom" constant="10" id="eLR-vm-Ydz"/>
                             <constraint firstItem="2se-Ph-ZKE" firstAttribute="height" secondItem="l6K-VT-j2q" secondAttribute="height" multiplier="0.26" id="fTu-bs-lnt"/>
                             <constraint firstItem="6ch-Jx-Hq4" firstAttribute="trailing" secondItem="kzM-jU-VnP" secondAttribute="trailing" constant="20" id="fWT-m1-eaP"/>
                             <constraint firstItem="6ch-Jx-Hq4" firstAttribute="trailing" secondItem="2se-Ph-ZKE" secondAttribute="trailing" constant="20" id="ga7-Mg-wSS"/>
                             <constraint firstItem="6ch-Jx-Hq4" firstAttribute="trailing" secondItem="0Vb-hQ-0wR" secondAttribute="trailing" constant="20" id="khP-3i-zko"/>
+                            <constraint firstItem="r4b-B0-09n" firstAttribute="top" secondItem="kzM-jU-VnP" secondAttribute="bottom" constant="15" id="oWb-pD-kEi"/>
                             <constraint firstItem="35p-fT-NG9" firstAttribute="height" secondItem="l6K-VT-j2q" secondAttribute="height" multiplier="0.26" id="rsf-cj-OkO"/>
                             <constraint firstItem="2se-Ph-ZKE" firstAttribute="leading" secondItem="6ch-Jx-Hq4" secondAttribute="leading" constant="20" id="vMk-uW-W2S"/>
                             <constraint firstItem="35p-fT-NG9" firstAttribute="top" secondItem="6ch-Jx-Hq4" secondAttribute="top" constant="40" id="zQM-PG-Hjl"/>
@@ -357,7 +387,154 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W1j-Nq-jvW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666.6666666666667" y="796.875"/>
+            <point key="canvasLocation" x="1636" y="797"/>
+        </scene>
+        <!--Add Post View Controller-->
+        <scene sceneID="HY8-Ws-2ll">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZuS-50-qXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="jCj-1U-W7y" customClass="AddPostViewController" customModule="Toast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zZf-B4-C1d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MiL-jh-HTz">
+                                <rect key="frame" x="20" y="30" width="374" height="202"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oi9-1j-ySO">
+                                <rect key="frame" x="20" y="30" width="374" height="202"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rq-6J-8pe">
+                                <rect key="frame" x="20" y="30" width="374" height="202"/>
+                                <state key="normal" image="grayCamera"/>
+                                <connections>
+                                    <action selector="addImageTapped:" destination="hPa-Zy-LTg" eventType="touchUpInside" id="J8i-YC-ggW"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="vGw-gw-Y9o">
+                                <rect key="frame" x="20" y="551" width="374" height="104"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ny6-7e-vrf" customClass="CustomTextField" customModule="Toast" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ool-CC-1R4">
+                                        <rect key="frame" x="0.0" y="35" width="374" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7fd-L1-dBX" customClass="CustomTextField" customModule="Toast" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yeg-DW-96b" customClass="CustomTextField" customModule="Toast" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="179" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4MQ-Ok-Cpz">
+                                        <rect key="frame" x="0.0" y="70" width="374" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="113-By-WPC" customClass="CustomTextField" customModule="Toast" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t0u-j4-HhR" customClass="CustomTextField" customModule="Toast" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="179" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n14-RZ-DGP" customClass="PMSuperButton" customModule="PMSuperButton">
+                                <rect key="frame" x="20" y="708" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="R7J-x7-xei"/>
+                                </constraints>
+                                <color key="tintColor" red="0.94901960780000005" green="0.16862745100000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Post">
+                                    <color key="titleColor" red="0.0" green="0.60784313729999995" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="rippleColor">
+                                        <color key="value" red="0.0" green="0.60784313729999995" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ripple" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rippleSpeed">
+                                        <real key="value" value="-4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8i-FE-Fe0" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="20" y="670" width="374" height="23"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" red="0.0" green="0.60784313729999995" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                        <color key="value" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DET-Ci-gs4" firstAttribute="trailing" secondItem="1Rq-6J-8pe" secondAttribute="trailing" constant="20" id="0fr-qY-Mac"/>
+                            <constraint firstItem="oi9-1j-ySO" firstAttribute="height" secondItem="zZf-B4-C1d" secondAttribute="height" multiplier="0.24" id="1X8-wr-7r0"/>
+                            <constraint firstItem="MiL-jh-HTz" firstAttribute="leading" secondItem="DET-Ci-gs4" secondAttribute="leading" constant="20" id="7tt-IF-vRz"/>
+                            <constraint firstItem="DET-Ci-gs4" firstAttribute="trailing" secondItem="oi9-1j-ySO" secondAttribute="trailing" constant="20" id="8df-nZ-mfn"/>
+                            <constraint firstItem="1Rq-6J-8pe" firstAttribute="leading" secondItem="DET-Ci-gs4" secondAttribute="leading" constant="20" id="8lH-Pz-xOr"/>
+                            <constraint firstItem="DET-Ci-gs4" firstAttribute="trailing" secondItem="n14-RZ-DGP" secondAttribute="trailing" constant="20" id="AgZ-5w-mLI"/>
+                            <constraint firstItem="e8i-FE-Fe0" firstAttribute="leading" secondItem="DET-Ci-gs4" secondAttribute="leading" constant="20" id="BNs-BH-ocu"/>
+                            <constraint firstItem="oi9-1j-ySO" firstAttribute="top" secondItem="DET-Ci-gs4" secondAttribute="top" constant="30" id="CbC-FD-bHa"/>
+                            <constraint firstItem="e8i-FE-Fe0" firstAttribute="top" secondItem="vGw-gw-Y9o" secondAttribute="bottom" constant="15" id="Gdq-AI-1i3"/>
+                            <constraint firstItem="n14-RZ-DGP" firstAttribute="top" secondItem="e8i-FE-Fe0" secondAttribute="bottom" constant="15" id="HNp-9E-YB6"/>
+                            <constraint firstItem="oi9-1j-ySO" firstAttribute="leading" secondItem="DET-Ci-gs4" secondAttribute="leading" constant="20" id="HYQ-8F-5w8"/>
+                            <constraint firstItem="vGw-gw-Y9o" firstAttribute="leading" secondItem="DET-Ci-gs4" secondAttribute="leading" constant="20" id="R8j-2R-lbm"/>
+                            <constraint firstItem="1Rq-6J-8pe" firstAttribute="height" secondItem="zZf-B4-C1d" secondAttribute="height" multiplier="0.24" id="XD8-TG-WYl"/>
+                            <constraint firstItem="MiL-jh-HTz" firstAttribute="top" secondItem="DET-Ci-gs4" secondAttribute="top" constant="30" id="XDL-f4-t6c"/>
+                            <constraint firstItem="MiL-jh-HTz" firstAttribute="height" secondItem="zZf-B4-C1d" secondAttribute="height" multiplier="0.24" id="bxC-qS-Vqz"/>
+                            <constraint firstItem="n14-RZ-DGP" firstAttribute="leading" secondItem="DET-Ci-gs4" secondAttribute="leading" constant="20" id="d2q-6c-YOJ"/>
+                            <constraint firstItem="DET-Ci-gs4" firstAttribute="trailing" secondItem="e8i-FE-Fe0" secondAttribute="trailing" constant="20" id="tqt-GQ-iIy"/>
+                            <constraint firstItem="DET-Ci-gs4" firstAttribute="trailing" secondItem="MiL-jh-HTz" secondAttribute="trailing" constant="20" id="uSB-5O-Xq3"/>
+                            <constraint firstItem="1Rq-6J-8pe" firstAttribute="top" secondItem="DET-Ci-gs4" secondAttribute="top" constant="30" id="vru-Sd-S7n"/>
+                            <constraint firstItem="DET-Ci-gs4" firstAttribute="trailing" secondItem="vGw-gw-Y9o" secondAttribute="trailing" constant="20" id="x1D-5A-Pxo"/>
+                            <constraint firstItem="DET-Ci-gs4" firstAttribute="bottom" secondItem="n14-RZ-DGP" secondAttribute="bottom" constant="40" id="z6d-4H-GWr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DET-Ci-gs4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nJc-ez-jZ4"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1635" y="1501"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="mft-h4-2qi">
@@ -574,6 +751,7 @@
                         <segue destination="hPa-Zy-LTg" kind="relationship" relationship="viewControllers" id="cDz-yy-eWE"/>
                         <segue destination="ChC-if-qKv" kind="relationship" relationship="viewControllers" id="Mpc-WT-dKq"/>
                         <segue destination="ZXK-kQ-Rve" kind="relationship" relationship="viewControllers" id="Wah-po-q5E"/>
+                        <segue destination="jCj-1U-W7y" kind="show" identifier="goToAddPost" id="j9x-tk-mKw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODD-FG-HxR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

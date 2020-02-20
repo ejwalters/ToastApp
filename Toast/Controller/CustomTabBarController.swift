@@ -22,6 +22,8 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
         self.delegate = self
         
+        
+        
         feedViewController = FeedViewController()
         profileViewController = ProfileViewController()
         addPostViewController = AddPostViewController()
@@ -51,11 +53,15 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
     }
     
     @objc func menuButtonAction(sender: UIButton) {
-       self.selectedIndex = 2
+       //self.selectedIndex = 2
+        //print("ADD POST")
+        performSegue(withIdentifier: "goToAddPost", sender: self)
        // console print to verify the button works
        //present(addPostViewController, animated: true)
     }
     
+    
+
 
     /*
     // MARK: - Navigation
