@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		5175154123F4DD8D005E8385 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175154023F4DD8D005E8385 /* ProfileView.swift */; };
 		5175154323F4DE96005E8385 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175154223F4DE96005E8385 /* ProfileImage.swift */; };
 		5175156523F87001005E8385 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5175156423F87001005E8385 /* Helpers.swift */; };
+		51DD6C2923FB35D800C286E0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DD6C2823FB35D800C286E0 /* CustomTextField.swift */; };
 		51F9C94B23F885B100AD4648 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C94A23F885B100AD4648 /* FeedViewController.swift */; };
 		51F9C94D23F8983800AD4648 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C94C23F8983800AD4648 /* HeaderView.swift */; };
 		51F9C94F23F8C17F00AD4648 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F9C94E23F8C17F00AD4648 /* ProfileViewController.swift */; };
@@ -59,6 +60,7 @@
 		5175154023F4DD8D005E8385 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5175154223F4DE96005E8385 /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 		5175156423F87001005E8385 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		51DD6C2823FB35D800C286E0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		51F9C94A23F885B100AD4648 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		51F9C94C23F8983800AD4648 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		51F9C94E23F8C17F00AD4648 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		51F9C95C23F9834C00AD4648 /* PostProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProfileView.swift; sourceTree = "<group>"; };
 		51F9C95E23F9880B00AD4648 /* PerfectCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectCircle.swift; sourceTree = "<group>"; };
 		51F9C96023F9DCF100AD4648 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		51F9C96223FB083E00AD4648 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60777919E55D7944C1DEED0A /* Pods-Toast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Toast/Pods-Toast.debug.xcconfig"; sourceTree = "<group>"; };
 		6D4BB8206296815FA4F7EDAD /* Pods_Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8690AC124E1A82FEC42845E4 /* Pods-Toast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toast.release.xcconfig"; path = "Pods/Target Support Files/Pods-Toast/Pods-Toast.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +159,7 @@
 				51F9C95C23F9834C00AD4648 /* PostProfileView.swift */,
 				51F9C95E23F9880B00AD4648 /* PerfectCircle.swift */,
 				51F9C96023F9DCF100AD4648 /* CellView.swift */,
+				51DD6C2823FB35D800C286E0 /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +207,7 @@
 		93F855307A63C21D71BE2320 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51F9C96223FB083E00AD4648 /* iOSDropDown.framework */,
 				6D4BB8206296815FA4F7EDAD /* Pods_Toast.framework */,
 			);
 			name = Frameworks;
@@ -307,50 +312,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Toast/Pods-Toast-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
-				"${BUILT_PRODUCTS_DIR}/FRHyperLabel/FRHyperLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
-				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
-				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
-				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
-				"${BUILT_PRODUCTS_DIR}/abseil/absl.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Toast/Pods-Toast-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FRHyperLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/absl.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Toast/Pods-Toast-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Toast/Pods-Toast-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Toast/Pods-Toast-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -360,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51DD6C2923FB35D800C286E0 /* CustomTextField.swift in Sources */,
 				5175152A23F36BB0005E8385 /* SignInViewController.swift in Sources */,
 				51F9C95123F8C1A700AD4648 /* SearchUsersViewController.swift in Sources */,
 				51F9C95323F8C1D600AD4648 /* AddPostViewController.swift in Sources */,

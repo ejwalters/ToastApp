@@ -15,11 +15,13 @@ import PopupDialog
 class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
    
-    @IBOutlet weak var firstName: MDCTextField!
-    @IBOutlet weak var lastName: MDCTextField!
-    @IBOutlet weak var emailAddress: MDCTextField!
-    @IBOutlet weak var password: MDCTextField!
-    @IBOutlet weak var validatePassword: MDCTextField!
+    @IBOutlet weak var firstName: CustomTextField!
+    @IBOutlet weak var lastName: CustomTextField!
+    @IBOutlet weak var emailAddress: CustomTextField!
+    @IBOutlet weak var password: CustomTextField!
+    @IBOutlet weak var validatePassword: CustomTextField!
+    
+
     @IBOutlet weak var profileImage: ProfileImage!
     @IBOutlet weak var cameraButton: UIButton!
     
@@ -225,57 +227,13 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     func setupTextBoxes() {
         
-        emailController = MDCTextInputControllerOutlined(textInput: emailAddress)
-        emailController!.placeholderText = "Email"
-        emailController!.inlinePlaceholderColor = UIColor.label
-        emailController!.floatingPlaceholderActiveColor = themeColor
-        emailController!.activeColor = UIColor.systemGray6
-        emailController!.disabledColor = UIColor.systemGray6
-        emailController!.textInsets(UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16))
-        
-        firstNameController = MDCTextInputControllerOutlined(textInput: firstName)
-        firstNameController!.placeholderText = "First Name"
-        firstNameController!.inlinePlaceholderColor = UIColor.label
-        firstNameController!.floatingPlaceholderActiveColor = themeColor
-        firstNameController!.activeColor = UIColor.systemGray6
-        firstNameController!.disabledColor = UIColor.systemGray6
-        firstNameController!.textInsets(UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16))
-        
-        lastNameController = MDCTextInputControllerOutlined(textInput: lastName)
-        lastNameController!.placeholderText = "Last Name"
-        lastNameController!.inlinePlaceholderColor = UIColor.label
-        lastNameController!.floatingPlaceholderActiveColor = themeColor
-        lastNameController!.activeColor = UIColor.systemGray6
-        lastNameController!.disabledColor = UIColor.systemGray6
-        lastNameController!.textInsets(UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16))
-        
-        passwordController = MDCTextInputControllerOutlined(textInput: password)
-        passwordController!.placeholderText = "Password"
-        passwordController!.inlinePlaceholderColor = UIColor.label
-        passwordController!.floatingPlaceholderActiveColor = themeColor
-        passwordController!.activeColor = UIColor.systemGray6
-        passwordController!.disabledColor = UIColor.systemGray6
-        passwordController!.textInsets(UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16))
-        
-        validatePasswordController = MDCTextInputControllerOutlined(textInput: validatePassword)
-        validatePasswordController!.placeholderText = "Confirm Password"
-        validatePasswordController!.inlinePlaceholderColor = UIColor.label
-        validatePasswordController!.floatingPlaceholderActiveColor = themeColor
-        validatePasswordController!.activeColor = UIColor.systemGray6
-        validatePasswordController!.disabledColor = UIColor.systemGray6
-        validatePasswordController!.textInsets(UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16))
+        emailAddress.placeholder = "Email"
+        firstName.placeholder = "First Name"
+        lastName.placeholder = "Last Name"
+        password.placeholder = "Password"
+        validatePassword.placeholder = "Confirm Password"
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

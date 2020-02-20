@@ -15,6 +15,8 @@ target 'Toast' do
   pod 'MaterialComponents/TextFields'
   pod 'FRHyperLabel'
   pod 'PopupDialog', '~> 1.1'
+  pod 'Cosmos', '~> 19.0'
+  pod 'PMSuperButton'
 
   # Pods for Toast
 

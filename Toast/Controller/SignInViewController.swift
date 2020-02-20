@@ -18,8 +18,9 @@ class SignInViewController: UIViewController {
 
     //@IBOutlet weak var signUpLabel: FRHyperLabel!
     @IBOutlet weak var signUpLabel: UILabel!
-    @IBOutlet weak var emailAddressField: MDCTextField!
-    @IBOutlet weak var passwordField: MDCTextField!
+    @IBOutlet weak var emailAddressField: CustomTextField!
+    @IBOutlet weak var passwordField: CustomTextField!
+    
     @IBOutlet weak var signUpButton: UIButton!
     var emailController: MDCTextInputControllerOutlined?
     var passwordController: MDCTextInputControllerOutlined?
@@ -119,23 +120,8 @@ class SignInViewController: UIViewController {
     
     //Setting up the material design text fields
     func setupTextBoxes() {
-        
-        emailController = MDCTextInputControllerOutlined(textInput: emailAddressField)
-        emailController!.placeholderText = "Email"
-        emailController!.inlinePlaceholderColor = UIColor.label
-        emailController!.floatingPlaceholderActiveColor = themeColor
-        emailController!.activeColor = UIColor.systemGray6
-        emailController!.disabledColor = UIColor.systemGray6
-        emailController!.textInsets(UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16))
-        
-        passwordController = MDCTextInputControllerOutlined(textInput: passwordField)
-        passwordController!.placeholderText = "Password"
-        passwordController!.inlinePlaceholderColor = UIColor.label
-        passwordController!.floatingPlaceholderActiveColor = themeColor
-        passwordController!.activeColor = UIColor.systemGray6
-        passwordController!.disabledColor = UIColor.systemGray6
-        passwordController!.textInsets(UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16))
-        
+        emailAddressField.placeholder = "Email"
+        passwordField.placeholder = "Password"
     }
     
     //Creating the label for creating an account where only Sign Up is clickable

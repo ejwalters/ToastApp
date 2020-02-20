@@ -13,6 +13,8 @@
 #import "CAMediaTimingFunction+MDCAnimationTiming.h"
 #import "MaterialAnimationTiming.h"
 #import "UIView+MDCTimingFunction.h"
+#import "MaterialAvailability.h"
+#import "MDCAvailability.h"
 #import "MaterialButtons.h"
 #import "MDCButton.h"
 #import "MDCFlatButton.h"

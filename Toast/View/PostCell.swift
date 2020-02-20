@@ -27,11 +27,14 @@ class PostCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        postImage.layer.cornerRadius = 2.0
+
         // Initialization code
     }
     
     func configureCell() {
         postImage.image = UIImage(named: "ChateauStMichelle")
+        
         postProfileImage.image = UIImage(named: "placeholderProfile")
     }
     

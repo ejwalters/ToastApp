@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5647DC363FA0935B0EADD9F2424C8B4E"
+               BlueprintIdentifier = "1316FE463B64E5BBDB7D6D5AAFED4B28"
+               BuildableName = "FRHyperLabel.framework"
                BlueprintName = "FRHyperLabel"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "FRHyperLabel.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
